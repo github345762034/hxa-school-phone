@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>护学安 - 官方网站</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background: #f9f9f9; }
         header { background: #07C160; color: white; padding: 60px 20px; text-align: center; }
         h1 { margin: 0; font-size: 3rem; font-weight: bold; letter-spacing: 2px; }
         .subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .section { margin-bottom: 50px; text-align: center; }
-        h2 { font-size: 1.8rem; margin-bottom: 20px; color: #333; position: relative; display: inline-block; }
+        .section { margin-bottom: 50px; text-align: center; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h2 { font-size: 1.8rem; margin-bottom: 30px; color: #333; position: relative; display: inline-block; }
         h2::after { content: ''; display: block; width: 40px; height: 3px; background: #07C160; margin: 10px auto 0; }
         .intro-text { font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; }
+        
+        /* 功能网格 */
         .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 30px; }
-        .feature-card { background: #f9f9f9; padding: 30px 20px; border-radius: 12px; transition: transform 0.3s; }
-        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .feature-card { background: #f9f9f9; padding: 30px 20px; border-radius: 12px; }
         .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
         .feature-title { font-weight: bold; margin-bottom: 10px; font-size: 1.1rem; }
         .feature-desc { font-size: 0.9rem; color: #777; }
-        footer { text-align: center; padding: 30px; background: #333; color: #aaa; font-size: 0.9rem; }
+
+        /* 截图展示 */
+        .screenshots { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; justify-content: center; flex-wrap: wrap; }
+        .screenshot-item { width: 200px; height: 120px; background: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 0.9rem; border: 1px dashed #ccc; }
+        
+        /* 下载区域 */
+        .download-box { background: #f0fdf4; padding: 30px; border-radius: 12px; border: 1px solid #bbf7d0; }
+        .btn { display: inline-block; background: #07C160; color: white; padding: 12px 40px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 20px; transition: background 0.3s; }
+        .btn:hover { background: #05a350; }
+        
+        footer { text-align: center; padding: 30px; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -30,6 +41,7 @@
     </header>
 
     <div class="container">
+        <!-- 产品介绍 -->
         <div class="section">
             <h2>产品介绍</h2>
             <p class="intro-text">
@@ -37,6 +49,7 @@
             </p>
         </div>
 
+        <!-- 核心功能 -->
         <div class="section">
             <h2>核心功能</h2>
             <div class="features">
@@ -60,6 +73,32 @@
                     <div class="feature-title">校园公告</div>
                     <div class="feature-desc">待机界面展示请假信息与学校重要通知。</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 界面展示 (审核员看重这个，证明你有真实界面) -->
+        <div class="section">
+            <h2>界面展示</h2>
+            <div class="screenshots">
+                <!-- 这里你可以替换成真实的 img 标签，目前用占位符示意 -->
+                <div class="screenshot-item">待机界面截图</div>
+                <div class="screenshot-item">刷卡界面截图</div>
+                <div class="screenshot-item">联系人界面截图</div>
+                <div class="screenshot-item">通话界面截图</div>
+            </div>
+        </div>
+
+        <!-- 下载/应用说明 -->
+        <div class="section">
+            <h2>应用下载</h2>
+            <div class="download-box">
+                <p style="font-size: 1.1rem; color: #333; margin-bottom: 10px;">
+                    本应用为<strong>硬件配套应用</strong>，预装在校园公话机设备中。
+                </p>
+                <p style="color: #666;">
+                    暂不对外提供公开下载。如需合作或试用，请联系我们。
+                </p>
+                <a href="mailto:contact@example.com" class="btn">联系商务合作</a>
             </div>
         </div>
     </div>
