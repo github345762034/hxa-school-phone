@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>护学安校园视频公话机 - 官方网站</title>
+    <title>护学安 - 官方网站</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background: #07C160; color: white; padding: 40px 20px; text-align: center; }
-        h1 { margin: 0; font-size: 2.5rem; }
-        p { font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        .section { margin-bottom: 40px; }
-        h2 { border-bottom: 2px solid #07C160; padding-bottom: 10px; display: inline-block; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        .feature { background: #f5f5f5; padding: 20px; border-radius: 10px; text-align: center; }
-        .btn { display: inline-block; background: #07C160; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        header { background: #07C160; color: white; padding: 60px 20px; text-align: center; }
+        h1 { margin: 0; font-size: 3rem; font-weight: bold; letter-spacing: 2px; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .section { margin-bottom: 50px; text-align: center; }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; color: #333; position: relative; display: inline-block; }
+        h2::after { content: ''; display: block; width: 40px; height: 3px; background: #07C160; margin: 10px auto 0; }
+        .intro-text { font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 30px; }
+        .feature-card { background: #f9f9f9; padding: 30px 20px; border-radius: 12px; transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .feature-title { font-weight: bold; margin-bottom: 10px; font-size: 1.1rem; }
+        .feature-desc { font-size: 0.9rem; color: #777; }
+        footer { text-align: center; padding: 30px; background: #333; color: #aaa; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <header>
-        <h1>护学安校园视频公话机</h1>
-        <p>让家校沟通更简单、更智能</p>
+        <h1>护学安</h1>
+        <div class="subtitle">让家校沟通更简单、更智能</div>
     </header>
 
     <div class="container">
         <div class="section">
             <h2>产品介绍</h2>
-            <p>护学安校园视频公话机是一款专为中小学设计的智能通讯设备。学生无需携带手机，通过刷卡即可拨打视频电话给家长，解决家校沟通难题，同时符合教育部关于手机管理的规定。</p>
+            <p class="intro-text">
+                护学安是一款专为中小学设计的智能通讯设备配套应用。学生无需携带手机，通过校园卡刷卡即可拨打视频电话给家长，解决家校沟通难题，同时符合教育部关于手机管理的规定。
+            </p>
         </div>
 
         <div class="section">
             <h2>核心功能</h2>
             <div class="features">
-                <div class="feature">
-                    <h3>📹 视频通话</h3>
-                    <p>高清视频通话，让亲情近在咫尺。</p>
+                <div class="feature-card">
+                    <div class="feature-icon">📹</div>
+                    <div class="feature-title">高清视频通话</div>
+                    <div class="feature-desc">稳定流畅的音视频通话，让亲情近在咫尺。</div>
                 </div>
-                <div class="feature">
-                    <h3>🎴 刷卡拨打</h3>
-                    <p>校园一卡通刷卡识别，安全便捷。</p>
+                <div class="feature-card">
+                    <div class="feature-icon">🎴</div>
+                    <div class="feature-title">刷卡拨打</div>
+                    <div class="feature-desc">支持校园一卡通识别，安全便捷，防误触。</div>
                 </div>
-                <div class="feature">
-                    <h3>💬 家长留言</h3>
-                    <p>家长可发送语音/文字留言，学生随时查看。</p>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-title">家长留言</div>
+                    <div class="feature-desc">家长可发送语音或文字留言，学生随时查看。</div>
                 </div>
-                <div class="feature">
-                    <h3>📢 校园公告</h3>
-                    <p>待机界面展示请假信息与学校通知。</p>
+                <div class="feature-card">
+                    <div class="feature-icon">📢</div>
+                    <div class="feature-title">校园公告</div>
+                    <div class="feature-desc">待机界面展示请假信息与学校重要通知。</div>
                 </div>
             </div>
-        </div>
-
-        <div class="section" style="text-align: center;">
-            <h2>下载应用</h2>
-            <p>本应用为硬件配套应用，预装在公话机设备中。</p>
-            <p>如需合作或试用，请联系我们。</p>
-            <a href="mailto:contact@yourcompany.com" class="btn">联系商务</a>
         </div>
     </div>
 
